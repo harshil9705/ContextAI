@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #f5f5f2;
+  --color-surface: #fefefc;
+  --color-surface-raised: #ffffff;
+  --color-surface-recessed: #f4f4f0;
+  --color-surface-sunken: #ecece7;
+
+  --color-ink: #23252a;
+  --color-ink-soft: #565a61;
+  --color-ink-faint: #878b92;
+
+  --color-fern: #2e6b4f;
+  --color-fern-soft: #e8f0ec;
+  --color-teal: #0e7268;
+  --color-teal-soft: #e5f0ef;
+  --color-gold: #a97b12;
+  --color-gold-soft: #f5f0e3;
+  --color-sage: #5e7a54;
+  --color-plum: #5d4991;
+  --color-mauve: #8d5b80;
+  --color-clay: #b0451f;
+  --color-danger: #b0432d;
+
+  --color-border: #e2e2dd;
+  --color-border-soft: #ebebea;
+
+  --radius-sm: 4px;
+  --radius-md: 5px;
+  --radius-lg: 6px;
+
+  --shadow-soft: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-lift: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-pop: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #17181b;
+    --color-surface: #1e2024;
+    --color-surface-raised: #252830;
+    --color-surface-recessed: #1a1c20;
+    --color-surface-sunken: #141518;
+
+    --color-ink: #e4e5e7;
+    --color-ink-soft: #a0a3a8;
+    --color-ink-faint: #6b6e74;
+
+    --color-fern: #5cb88a;
+    --color-fern-soft: #1e2e26;
+    --color-teal: #3db8ad;
+    --color-teal-soft: #1a2b2a;
+    --color-gold: #d4a63a;
+    --color-gold-soft: #2a2518;
+    --color-sage: #88a67e;
+    --color-plum: #9b7fd0;
+    --color-mauve: #c08ab0;
+    --color-clay: #d87050;
+    --color-danger: #d86050;
+
+    --color-border: #2e3038;
+    --color-border-soft: #262830;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #17181b;
+  --color-surface: #1e2024;
+  --color-surface-raised: #252830;
+  --color-surface-recessed: #1a1c20;
+  --color-surface-sunken: #141518;
+
+  --color-ink: #e4e5e7;
+  --color-ink-soft: #a0a3a8;
+  --color-ink-faint: #6b6e74;
+
+  --color-fern: #5cb88a;
+  --color-fern-soft: #1e2e26;
+  --color-teal: #3db8ad;
+  --color-teal-soft: #1a2b2a;
+  --color-gold: #d4a63a;
+  --color-gold-soft: #2a2518;
+  --color-sage: #88a67e;
+  --color-plum: #9b7fd0;
+  --color-mauve: #c08ab0;
+  --color-clay: #d87050;
+  --color-danger: #d86050;
+
+  --color-border: #2e3038;
+  --color-border-soft: #262830;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}

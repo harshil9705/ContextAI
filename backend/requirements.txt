@@ -1,0 +1,9 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.32,<1
+httpx>=0.28,<1
+openai>=1.60,<2
+numpy>=2.0,<3
+trafilatura>=2.0,<3
+pydantic-settings>=2.7,<3
+python-dotenv>=1.0,<2
+aiosqlite>=0.21,<1
